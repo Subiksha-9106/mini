@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach | Progress</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Study Coach</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/planner.html">Planner</a>
+            <a href="/progress.html">Progress</a>
+            <a href="/focus.html">Focus</a>
+            <a href="/timer.html">Timer</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="card center-card max-w-800">
+            <div class="flex-between mb-2">
+                <h2>Your Progress</h2>
+                <div class="streak-badge">
+                    <span id="streakCount">0 Days</span> 🔥
+                </div>
+            </div>
+
+            <div id="progressContainer">
+                <div class="flex-between">
+                    <span class="font-medium" id="progressTitle">Current Plan</span>
+                    <span class="text-light" id="progressText">0 of 0 Tasks Completed (0%)</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                
+                <div class="mt-2" id="taskContainer">
+                    <h3 class="mb-1">Daily Tasks</h3>
+                    <div id="taskList">
+                        <!-- Tasks generated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

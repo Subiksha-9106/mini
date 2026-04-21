@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach | Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Auth Modal (Visible if not logged in) -->
+    <div class="modal-overlay" id="authModal">
+        <div class="card auth-modal">
+            <h2 class="text-center mb-2">Welcome to Study Coach</h2>
+            <p class="text-center text-light mb-2">Login or sign up to save your progress locally.</p>
+            <form id="authForm">
+                <input type="text" id="authName" placeholder="Full Name" required>
+                <input type="email" id="authEmail" placeholder="Email Address" required>
+                <button type="submit" style="width: 100%">Continue to App</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Study Coach</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/planner.html">Planner</a>
+            <a href="/progress.html">Progress</a>
+            <a href="/focus.html">Focus</a>
+            <a href="/timer.html">Timer</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <header class="hero">
+            <h1>Your Exam Companion</h1>
+            <p class="text-light subtitle">Plan smart. Stay focused. Achieve more.</p>
+            <button class="mt-2" onclick="window.location.href='/planner.html'">Get Started</button>
+        </header>
+
+        <section class="features-grid mt-2">
+            <div class="card text-center">
+                <h3>Planner</h3>
+                <p class="text-light mt-1">Generate a structured study schedule for any subject.</p>
+            </div>
+            <div class="card text-center">
+                <h3>Progress</h3>
+                <p class="text-light mt-1">Track your tasks and maintain your daily study streak.</p>
+            </div>
+            <div class="card text-center">
+                <h3>Focus</h3>
+                <p class="text-light mt-1">Find motivation and review important topics instantly.</p>
+            </div>
+            <div class="card text-center">
+                <h3>Timer</h3>
+                <p class="text-light mt-1">Boost productivity with our built-in Pomodoro timer.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

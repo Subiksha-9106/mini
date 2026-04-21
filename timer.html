@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach | Timer</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Study Coach</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/planner.html">Planner</a>
+            <a href="/progress.html">Progress</a>
+            <a href="/focus.html">Focus</a>
+            <a href="/timer.html">Timer</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="card center-card max-w-600 text-center">
+            <h2 class="mb-1">Pomodoro Timer</h2>
+            <p class="text-light">Laser focus for 25 minutes, then take a break.</p>
+            
+            <div class="timer-display" id="timeDisplay">25:00</div>
+            
+            <div class="flex-center gap-1 mt-2">
+                <button id="timerToggle" class="btn-large">Start</button>
+                <button id="timerReset" class="btn-large btn-outline">Reset</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

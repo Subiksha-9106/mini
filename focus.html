@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Coach | Focus</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Study Coach</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/planner.html">Planner</a>
+            <a href="/progress.html">Progress</a>
+            <a href="/focus.html">Focus</a>
+            <a href="/timer.html">Timer</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="card center-card max-w-800 text-center mb-2">
+            <div class="quote-box">
+                "<span id="quoteText">Loading inspiration...</span>"
+            </div>
+        </div>
+
+        <div class="card center-card max-w-800">
+            <h2 class="mb-2">Important Topics</h2>
+            <p class="text-light mt-0 mb-1">Select a subject to overview the most critical study domains.</p>
+            
+            <select id="focusSubjectSelect">
+                <!-- Injected via JS -->
+                 <option value="" disabled selected>-- Select a Subject --</option>
+            </select>
+
+            <div class="topics-list mt-2" id="importantTopics">
+                <!-- Topics will appear here -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
